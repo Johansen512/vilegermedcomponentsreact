@@ -1,7 +1,6 @@
 /**@jsxImportSource @emotion/core */
 import { css } from "@emotion/core";
-import { dataContext } from "../Contexts/DataContext";
-const Thumbbasic = (image) => {
+const Thumbbasic = ({image, props}) => {
 
     
 

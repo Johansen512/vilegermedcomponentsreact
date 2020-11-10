@@ -5,10 +5,10 @@ import { useContext } from "react";
 import { dataContext } from "../Contexts/DataContext";
 import Thumbbasic from "../Components/Thumbbasic"
 
-const Themebox = ({label, title, image, id, props}) => {
+const Themebox = (props) => {
 
     const { data } = useContext(dataContext);
-    data && console.log("from context:", data[1].photo);
+    data && console.log("from context:", data[1].text);
 
 
 const style = css`
