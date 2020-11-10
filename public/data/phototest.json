@@ -1,10 +1,10 @@
 { 
-    "test": [
+    "phototest": [
         {
             "id": 1,
             "name": "Åfjorden",
             "text": "bla bla ipso bla bla",
-            "image": "fjord"
+            "photo": "fjord"
            
             
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "name": "Treasure Island",
             "text": "bla bla ipso bla ipso bla ipso bla ipso bla bla",
-            "image": "Island1"
+            "photo": "Island1"
            
             
         },
@@ -20,15 +20,15 @@
             "id": 3,
             "name": "Lake Placid",
             "text": "bla ipso bla ipso bla ipso bla ipso bla",
-            "image": "lake"
+            "photo": "lake"
            
             
         },
         {
             "id": 4,
             "name": "The Nile",
-            "text" "bla ipso bla ipso bla ipso bla ipso bla bkaaaaabla",
-            "image": "river"
+            "text": "bla ipso bla ipso bla ipso bla ipso bla bkaaaaabla",
+            "photo": "river"
            
             
         }
