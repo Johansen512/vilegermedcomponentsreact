@@ -3,9 +3,11 @@ import { css } from "@emotion/core";
 import Button from "../Components/Button";
 import { useContext } from "react";
 import { dataContext } from "../Contexts/DataContext";
-import Thumbbasic from "../Components/Thumbbasic"
+import Thumbbasic from "../Components/Thumbbasic";
+import Thebigpicture from "../Components/Thebigpicture"
+import Thebigheadline from "../Components/Thebigheadline"
 
-const Themebox = (props) => {
+const Themebox = ( props ) => {
 
     const { data } = useContext(dataContext);
     data && console.log("from context:", data[1].text);
@@ -19,6 +21,7 @@ width: 771px;
 height: 454px;
 margin: 20px;
 
+
 `;
 
 const thumbstyle = css`
@@ -26,24 +29,17 @@ const thumbstyle = css`
     grid-row: 7/8;
     justify-self: start;
     border-radius:12px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom:20px;
     margin-top: 40px;
     
     
     
+    
+    
     `;
 
-const imgstyle = css`
-grid-column: 1/2;
-grid-row: 2/8;
-border-radius:12px;
-margin-left: 40px;
-margin-right: 20px;
-margin-top:40px;
-margin-bottom:40px;
 
-`;
 
 
 
@@ -58,23 +54,16 @@ margin-top: 40px;
 padding-left:10px;
 `;
 
-const hstyle = css`
 
-grid-column: 2/9;
-grid-row: 5/6;
-justify-self: start; 
-margin-left: 20px;
-padding-left: 10px;
 
-`;
 
 
     return (
 <div css={style}>
-    <img css={imgstyle} src="../img/fjord.png" alt="landscape"/>
-    <h1 css={hstyle}>Headline here</h1 >
+    {data && <Thebigpicture image={data[0].photo}/> }
+    {data && <Thebigheadline headline={data[0].name}/> }
     <Button label={"Leisure"} />
-    <p css={pstyle} >Text here ... and here ... and here bla bala bla bla bla Text here ... and here ... and here bla bala bla bla bla. ... and here bla bala bla bla bla</p>
+    {data && <p css={pstyle} >{data[0].text}</p>}
     <div css={thumbstyle} >
     {data && <Thumbbasic id={data[1].id} image={data[1].photo} title={data[1].name}/> }
     {data && <Thumbbasic id={data[2].id} image={data[2].photo} title={data[2].name}/> }

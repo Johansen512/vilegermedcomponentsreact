@@ -5,10 +5,10 @@ const Thumbbasic = ({image, props}) => {
     
 
 const singlethumb = css`
-
-
 border-radius:20px;
-padding: 10px;
+margin:0.5rem;
+border: none;
+
 
 
 `;
@@ -16,7 +16,7 @@ padding: 10px;
 
     return (  
 
-        <button ><img css={singlethumb} src={`img/${image}.png`}/></button>
+        <button css={singlethumb} ><img  src={`img/${image}.png`}/></button>
     );
 }
  

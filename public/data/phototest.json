@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Åfjorden",
-            "text": "bla bla ipso bla bla",
+            "text": "Dette er tekst til billede 1",
             "photo": "fjord"
            
             
@@ -11,7 +11,7 @@
         {
             "id": 2,
             "name": "Treasure Island",
-            "text": "bla bla ipso bla ipso bla ipso bla ipso bla bla",
+            "text": "Dette er tekst til billede 2",
             "photo": "Island1"
            
             
@@ -19,7 +19,7 @@
         {
             "id": 3,
             "name": "Lake Placid",
-            "text": "bla ipso bla ipso bla ipso bla ipso bla",
+            "text": "Dette er tekst til billede 3",
             "photo": "lake"
            
             
@@ -27,7 +27,7 @@
         {
             "id": 4,
             "name": "The Nile",
-            "text": "bla ipso bla ipso bla ipso bla ipso bla bkaaaaabla",
+            "text": "Dette er tekst til billede 4",
             "photo": "river"
            
             
