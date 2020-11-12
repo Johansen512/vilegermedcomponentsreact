@@ -5,7 +5,7 @@ export const dataContext = createContext();
 
 const DataContextProvider = (props) => {
     const [data, setData] = useState(null);
-    //const [lampcolor, setLampcolor]= useState("#ff0000")
+    const [pictureid, setPictureid] = useState(1)
   
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const DataContextProvider = (props) => {
     
     data && console.log(data)
     
-    return (<dataContext.Provider value={{ data }}>
+    return (<dataContext.Provider value={{ data, pictureid, setPictureid }}>
 
     {props.children}
     </dataContext.Provider>

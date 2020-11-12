@@ -12,13 +12,17 @@ const Thebigpicture = ({image, props}) => {
     margin-right: 20px;
     margin-top:40px;
     margin-bottom:40px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 5px #3c3654;
+    
     
     `;
 
 
     return (  
 
-        <img css={imgstyle} src={`img/${image}.png`} alt="landscape"/>
+        <img css={imgstyle} src={`img/${image}.jpg`} alt="landscape"/>
     );
 }
  

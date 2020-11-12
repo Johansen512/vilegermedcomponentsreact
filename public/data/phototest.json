@@ -2,33 +2,96 @@
     "phototest": [
         {
             "id": 1,
-            "name": "Åfjorden",
+            "name": "The Highway man",
             "text": "Dette er tekst til billede 1",
-            "photo": "fjord"
+            "photo": "TheHighwayman"
            
             
         },
         {
             "id": 2,
-            "name": "Treasure Island",
+            "name": "Plague Doctor",
             "text": "Dette er tekst til billede 2",
-            "photo": "Island1"
+            "photo": "PlagueDoctor"
            
             
         },
         {
             "id": 3,
-            "name": "Lake Placid",
+            "name": "The Hellion",
             "text": "Dette er tekst til billede 3",
-            "photo": "lake"
+            "photo": "TheHellion"
            
             
         },
         {
             "id": 4,
-            "name": "The Nile",
+            "name": "The Jester",
             "text": "Dette er tekst til billede 4",
-            "photo": "river"
+            "photo": "TheJester"
+           
+            
+        },
+
+        {
+            "id": 5,
+            "name": "The Antiquarian",
+            "text": "Dette er tekst til billede 5",
+            "photo": "TheAntiquarian"
+           
+            
+        },
+
+        {
+            "id": 6,
+            "name": "The Grave Robber",
+            "text": "Dette er tekst til billede 6",
+            "photo": "TheGraveRobber"
+           
+            
+        },
+
+        {
+            "id": 7,
+            "name": "Man at Arms",
+            "text": "Dette er tekst til billede 7",
+            "photo": "manatarms"
+           
+            
+        },
+
+        {
+            "id": 8,
+            "name": "Miller",
+            "text": "Dette er tekst til billede 8",
+            "photo": "Miller"
+           
+            
+        },
+
+        {
+            "id": 9,
+            "name": "Gargoyle",
+            "text": "Dette er tekst til billede 9",
+            "photo": "Gargoyle"
+           
+           
+        },
+
+        {
+            "id": 10,
+            "name": "Swine Slasher",
+            "text": "Dette er tekst til billede 10",
+            "photo": "SwineSlasher"
+           
+            
+        },
+
+        {
+            "id": 11,
+            "name": "Thing From The Stars",
+            "text": "Dette er tekst til billede 11",
+            "photo": "ThingFromTheStars"
            
             
         }

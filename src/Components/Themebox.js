@@ -1,37 +1,60 @@
 /**@jsxImportSource @emotion/core */
 import { css } from "@emotion/core";
-import Button from "../Components/Button";
 import { useContext } from "react";
 import { dataContext } from "../Contexts/DataContext";
 import Thumbbasic from "../Components/Thumbbasic";
 import Thebigpicture from "../Components/Thebigpicture"
 import Thebigheadline from "../Components/Thebigheadline"
+import Thebigtext from "../Components/Thebigtext"
+
 
 const Themebox = ( props ) => {
 
     const { data } = useContext(dataContext);
+    
     data && console.log("from context:", data[1].text);
+    
 
+    const {pictureid}=useContext(dataContext)
+    console.log ("hey det er jo " + (pictureid))
+
+    let enhest = data && data.find(function (element) { 
+            
+    
+        return element.id === pictureid; 
+        
+    }); 
+    console.log (enhest); 
+    
+    console.log (props);
 
 const style = css`
 display:grid;
 grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-background-color:white;
+background-color:#696382;
 width: 771px;
 height: 454px;
 margin: 20px;
 
 
+
 `;
 
 const thumbstyle = css`
+    display:flex;
     grid-column: 2/9;
     grid-row: 7/8;
     justify-self: start;
-    border-radius:12px;
-    margin-left: 10px;
-    margin-bottom:20px;
-    margin-top: 40px;
+    overflow:scroll;
+    overflow-y:hidden;
+    width:400px;
+    height:180px;
+  
+  
+   
+    
+
+
     
     
     
@@ -43,31 +66,32 @@ const thumbstyle = css`
 
 
 
-const pstyle = css`
-grid-column: 2/9;
-grid-row: 6/7;
-justify-self: start;
-border-radius:20px;
-margin-left: 20px;
-margin-bottom:20px;
-margin-top: 40px;
-padding-left:10px;
-`;
 
 
 
 
 
-    return (
+
+    return enhest &&(
 <div css={style}>
-    {data && <Thebigpicture image={data[0].photo}/> }
-    {data && <Thebigheadline headline={data[0].name}/> }
-    <Button label={"Leisure"} />
-    {data && <p css={pstyle} >{data[0].text}</p>}
+
+    {data &&<Thebigpicture image={enhest.photo}/> }
+    {data &&<Thebigheadline headline={enhest.name}/> }
+
+    
+    {data &&<Thebigtext text={enhest.text} /> }
     <div css={thumbstyle} >
-    {data && <Thumbbasic id={data[1].id} image={data[1].photo} title={data[1].name}/> }
-    {data && <Thumbbasic id={data[2].id} image={data[2].photo} title={data[2].name}/> }
-    {data && <Thumbbasic id={data[3].id} image={data[3].photo} title={data[3].name}/> }
+    {data && <Thumbbasic id={data[0].id} image={data[0].photo} /> }
+    {data && <Thumbbasic id={data[1].id} image={data[1].photo} /> }
+    {data && <Thumbbasic id={data[2].id} image={data[2].photo} /> }
+    {data && <Thumbbasic id={data[3].id} image={data[3].photo} /> }
+    {data && <Thumbbasic id={data[4].id} image={data[4].photo} /> }
+    {data && <Thumbbasic id={data[5].id} image={data[5].photo} /> }
+    {data && <Thumbbasic id={data[6].id} image={data[6].photo} /> }
+    {data && <Thumbbasic id={data[7].id} image={data[7].photo} /> }
+    {data && <Thumbbasic id={data[8].id} image={data[8].photo} /> }
+    {data && <Thumbbasic id={data[9].id} image={data[9].photo} /> }
+    {data && <Thumbbasic id={data[10].id} image={data[10].photo} /> }
         </div>
         </div>
 
