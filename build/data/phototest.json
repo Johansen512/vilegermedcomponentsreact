@@ -94,7 +94,17 @@
             "photo": "ThingFromTheStars"
            
             
+        },
+
+        {
+            "id": 12,
+            "name": "The Leper",
+            "text": "Dette er tekst til billede 11",
+            "photo": "Leper"
+           
+            
         }
+       
        
     ]
 }
