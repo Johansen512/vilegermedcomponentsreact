@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 import { useContext } from "react";
 import { dataContext } from "../Contexts/DataContext"
 
-const Thumbbasic = ({image, id, props}) => {
+const Thumbbasic = ({image, id, name, props}) => {
 
     const {setPictureid, pictureid } = useContext (dataContext)
     console.log (pictureid)
@@ -34,7 +34,7 @@ box-shadow: 5px 5px 5px #3c3654;
 
     return (  
 
-        <div css={singlethumb} onClick={() => setPictureid (id) }><img css={singleimg} src={`img/${image}.jpg`}/></div>
+        <div css={singlethumb} onClick={() => setPictureid (id) }><img css={singleimg} src={`img/${image}.jpg`} alt={name}/></div>
     );
 }
  
