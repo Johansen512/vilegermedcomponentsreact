@@ -81,17 +81,9 @@ const thumbstyle = css`
     
     {data &&<Thebigtext text={enhest.text} /> }
     <div css={thumbstyle} >
-    {data && <Thumbbasic id={data[0].id} image={data[0].photo} name={data[0].name}/> }
-    {data && <Thumbbasic id={data[1].id} image={data[1].photo} name={data[1].name}/> }
-    {data && <Thumbbasic id={data[2].id} image={data[2].photo} name={data[2].name}/> }
-    {data && <Thumbbasic id={data[3].id} image={data[3].photo} name={data[3].name}/> }
-    {data && <Thumbbasic id={data[4].id} image={data[4].photo} name={data[4].name}/> }
-    {data && <Thumbbasic id={data[5].id} image={data[5].photo} name={data[5].name}/> }
-    {data && <Thumbbasic id={data[6].id} image={data[6].photo} name={data[6].name}/> }
-    {data && <Thumbbasic id={data[7].id} image={data[7].photo} name={data[7].name}/> }
-    {data && <Thumbbasic id={data[8].id} image={data[8].photo} name={data[8].name}/> }
-    {data && <Thumbbasic id={data[9].id} image={data[9].photo} name={data[9].name}/> }
-    {data && <Thumbbasic id={data[10].id} image={data[10].photo} name={data[10].name}/>}
+{data && data.map(picture => <Thumbbasic id={picture.id} image={picture.photo} name={picture.name} /> )}
+
+    
         </div>
         </div>
 
